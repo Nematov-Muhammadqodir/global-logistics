@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function createLink(item, projectName) {
+  //We are passing values from the input and prompt, olg'a dalbayoplaaar😆
   return `
     <li>
       <a href="${item}" target="_blank">${projectName}</a>
