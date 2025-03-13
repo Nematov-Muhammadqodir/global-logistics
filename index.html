@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nematov Mukhammadkodir - Assignments</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #800020; /* Burgundy */
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-        }
-        h2 {
-            border-bottom: 2px solid white;
-            padding-bottom: 10px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border: 2px solid white;
-            padding: 8px 12px;
-            border-radius: 5px;
-            display: inline-block;
-            transition: 0.3s;
-        }
-        a:hover {
-            background: white;
-            color: #800020;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #800020; /* Burgundy */
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+      }
+      h2 {
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      ul li {
+        margin: 10px 0;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border: 2px solid white;
+        padding: 8px 12px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: 0.3s;
+      }
+      a:hover {
+        background: white;
+        color: #800020;
+      }
+
+      #form_input {
+        border: none;
+        padding: 10px 20px;
+        width: 300px;
+        background-color: #e96d8c;
+        border-radius: 7px;
+      }
+      #assignment_form {
+        margin-top: 50px;
+      }
+
+      #assignment_form label {
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-right: 15px;
+      }
+      #assignment_form button {
+        border: none;
+        padding: 10px 20px;
+        color: #800020;
+        font-weight: 400;
+        letter-spacing: 2px;
+        border-radius: 7px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <form action="/post" id="assignment_form">
+      <label for="form_input">Put your link here</label>
+      <input type="text" id="form_input" />
+      <button type="submit">Submit</button>
+    </form>
     <header>Nematov Mukhammadkodir</header>
     <div class="container">
-        <h2>Assignments</h2>
-        <ul>
-            <li><a href="#">Assignment 1</a></li>
-            <li><a href="#">Assignment 2</a></li>
-            <li><a href="#">Assignment 3</a></li>
-            <li><a href="#">Assignment 4</a></li>
-            <li><a href="#">Assignment 5</a></li>
-        </ul>
+      <h2>Assignments</h2>
+      <ul class="link_cont"></ul>
     </div>
-</body>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
