@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coupang Logistics – Smart Delivery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6 shadow-md sticky top-0 z-10">
+    <h1 class="text-3xl font-bold text-center">📦 Coupang Logistics Strategy</h1>
+    <p class="text-center text-lg">Korea's Fastest and Most Efficient E-commerce Delivery System</p>
+  </header>
+
+  <!-- Hero -->
+  <section class="p-10 bg-white text-center fade-in">
+    <h2 class="text-2xl font-semibold mb-4">Why Coupang Stands Out?</h2>
+    <p class="max-w-2xl mx-auto">
+      Coupang revolutionized e-commerce logistics in South Korea with its proprietary "Rocket Delivery" system. It delivers millions of products within hours, sometimes even overnight, through an advanced supply chain network built entirely in-house.
+    </p>
+  </section>
+
+  <!-- Logistics Sections -->
+  <section class="p-10 space-y-12">
+
+    <!-- Warehousing -->
+    <div class="bg-blue-100 p-6 rounded-lg shadow-md fade-in">
+      <h3 class="text-xl font-bold mb-2">1. Fulfillment Centers</h3>
+      <p>
+        Coupang owns and operates over 100 fulfillment centers across South Korea. These facilities are fully automated and located strategically near urban areas, enabling same-day or next-day delivery.
+      </p>
+    </div>
+
+    <!-- Inventory Control -->
+    <div class="bg-yellow-100 p-6 rounded-lg shadow-md fade-in">
+      <h3 class="text-xl font-bold mb-2">2. Inventory Management</h3>
+      <p>
+        Coupang uses real-time data analysis to manage inventory. Products are stocked based on regional demand, reducing delivery delays and improving availability.
+      </p>
+    </div>
+
+    <!-- Rocket Delivery -->
+    <div class="bg-green-100 p-6 rounded-lg shadow-md fade-in">
+      <h3 class="text-xl font-bold mb-2">3. Rocket Delivery</h3>
+      <p>
+        Rocket Delivery is Coupang’s signature fast shipping model. Over 70% of South Korea’s population can receive products within 24 hours thanks to this system.
+      </p>
+    </div>
+
+    <!-- Last-Mile Delivery -->
+    <div class="bg-purple-100 p-6 rounded-lg shadow-md fade-in">
+      <h3 class="text-xl font-bold mb-2">4. Last-Mile Innovation</h3>
+      <p>
+        Coupang employs thousands of full-time drivers called "Coupang Friends" to ensure reliable, friendly, and fast last-mile delivery without relying on third parties.
+      </p>
+    </div>
+
+    <!-- Technology Integration -->
+    <div class="bg-pink-100 p-6 rounded-lg shadow-md fade-in">
+      <h3 class="text-xl font-bold mb-2">5. Tech & Automation</h3>
+      <p>
+        Coupang’s entire logistics process is powered by AI, machine learning, and robotics — from product storage to route optimization for drivers.
+      </p>
+    </div>
+
+    <!-- Returns -->
+    <div class="bg-red-100 p-6 rounded-lg shadow-md fade-in">
+      <h3 class="text-xl font-bold mb-2">6. Easy Returns</h3>
+      <p>
+        Customers can return items without repackaging or labels — Coupang offers free pick-up returns, boosting customer satisfaction and trust.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- Conclusion -->
+  <section class="bg-white p-10 text-center fade-in">
+    <h2 class="text-2xl font-bold mb-4">🚀 Coupang's Key Advantages</h2>
+    <ul class="list-disc list-inside max-w-xl mx-auto text-left">
+      <li>End-to-end logistics owned and managed by Coupang</li>
+      <li>AI-based forecasting and inventory planning</li>
+      <li>24-hour delivery to most of Korea</li>
+      <li>Highly efficient, employee-led delivery service</li>
+      <li>Unmatched customer convenience (returns, speed, quality)</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-6 mt-10">
+    <p>Created by Shakhzodbek – Powered by TailwindCSS</p>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const fadeIns = document.querySelectorAll(".fade-in");
+    const onScroll = () => {
+      fadeIns.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add("show");
+        }
+      });
+    };
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+  </script>
+</body>
+</html>
